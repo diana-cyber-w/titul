@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    opacity: 1;
+}
+
+.mouse-parallax_content {
+    position: relative;
+    font-size: 200px;
+    color: #eaeef3;
+    top: 20%;
+    text-shadow: 4px 4px 6px black;
+    text-align: center;
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    background-size: cover;
+    background-image: url("viktor-vasicsek-wL6FgkncWDs-unsplash.jpg");
+}
+
+.background .water {
+    z-index: -1;
+    position: absolute;
+    background-image: url("viktor-vasicsek-wL6FgkncWDs-unsplash.jpg");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: url("#turbulence");
+}
